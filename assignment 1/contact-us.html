@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <header>
+        <div class="website-title-container">
+            <img src="images/website-logo.jpeg" alt="Website logo"/>
+            <h1>Welcome to NJ Luxury Car Rentals!</h1>
+        </div>
+      <nav class="sitenav">
+        <ul class="tabs">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="cars-list.html">Cars List</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="car-request">
+      <form action="/request-car.html" method="get">
+        <label for="fname">Full name:</label>
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="phone">Enter your phone number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <a href="mailto:email@example.com">Contact us via mail!</a>
+
+    <p>Do you wish to share the information for our business online?</p><br>
+    <menu type="context" id="menuexample">
+        <menu label="Share on...">
+          <menuitem label="Twitter" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
+          <menuitem label="Facebook" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+        </menu>
+    </menu>
+
+    <footer class="footer">
+      <p>Copyright © NJ Luxury Car Rentals 2023. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

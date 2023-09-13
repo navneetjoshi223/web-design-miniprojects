@@ -1,0 +1,56 @@
+body {
+    /* background-image: url("images/background-picture.webp"); */
+}
+
+header {
+    display: block;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+.website-title-container {
+    display: flex;
+}
+
+.sitenav {
+    display: flex;
+}
+
+.footer {
+    display: block;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+details {
+    display: block;
+    padding: 15px;
+}
+
+.car {
+    display: flex;
+}
+
+.car-photo {
+    flex: 0.3;
+}
+
+.car-info {
+    flex: 0.7;
+}
+
+.car-photo img {
+    width: 350px;
+    height: 250px;
+    padding: 5px;
+}

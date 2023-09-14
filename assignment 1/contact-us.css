@@ -78,3 +78,23 @@ td {
     text-decoration: none;
     border-radius: 5px;
 }
+
+.menu-container p {
+    margin-left: 20px;
+}
+
+#save, #share {
+    background-color: #ececec;
+    color: #000080;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.mailto-and-tel {
+    margin: 20px;
+}

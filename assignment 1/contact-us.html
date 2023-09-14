@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="stylesheet" href="contact-us.css" />
   </head>
   <body>
     <header>
-        <div class="website-title-container">
-            <img src="images/website-logo.jpeg" alt="Website logo"/>
-            <h1>Welcome to NJ Luxury Car Rentals!</h1>
-        </div>
+      <div class="website-title-container">
+        <img src="images/website-logo.jpeg" alt="Website logo" />
+        <h1>NJ Luxury Car Rentals</h1>
+      </div>
       <nav class="sitenav">
         <ul class="tabs">
           <li><a href="homepage.html">Home</a></li>
@@ -21,30 +22,72 @@
         </ul>
       </nav>
     </header>
-    <div class="car-request">
-      <form action="/request-car.html" method="get">
-        <label for="fname">Full name:</label>
-        <input type="text" id="fname" name="fname" /><br />
-        <label for="phone">Enter your phone number:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          required
-        />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-    <a href="mailto:email@example.com">Contact us via mail!</a>
+    <div class="contact-us-container">
+      <div class="car-request">
+        <form action="/request-car.html" method="get">
+          <label for="fname">Full name:</label>
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="msg">Enter your message:</label>
+          <input
+            type="text"
+            id="msg"
+            name="msg"
+            required
+          />
+          <input type="submit" value="Send Message" />
+        </form>
+      </div>
+      <a href="mailto:joshi.nav@northeastern.edu" class="mailto">Contact us via email</a>
+      <a href="tel:+18574235259" class="tel">Contact the owner: +1 (857) 423-5259</a>
 
-    <p>Do you wish to share the information for our business online?</p><br>
-    <menu type="context" id="menuexample">
+      <p>Do you wish to share the information for our business online?</p>
+      <br />
+      <menu type="context" id="menuexample">
         <menu label="Share on...">
-          <menuitem label="Twitter" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
-          <menuitem label="Facebook" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+          <menuitem
+            label="Twitter"
+            onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"
+          ></menuitem>
+          <menuitem
+            label="Facebook"
+            onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"
+          ></menuitem>
         </menu>
-    </menu>
+      </menu>
+
+      <div class="service-locations">
+        <table class="service-locations-table">
+          <thead>
+            <tr>
+              <th>Service Location</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Boston, USA</td>
+              <td>+1 (123) 456-7890</td>
+            </tr>
+            <tr>
+              <td>London, UK</td>
+              <td>+44 (20) 7123-4567</td>
+            </tr>
+            <tr>
+              <td>Tokyo, Japan</td>
+              <td>+81 (3) 4567-8901</td>
+            </tr>
+            <tr>
+              <td>Sydney, Australia</td>
+              <td>+61 (2) 9876-5432</td>
+            </tr>
+            <tr>
+              <td>Paris, France</td>
+              <td>+33 (1) 2345-6789</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
     <footer class="footer">
       <p>Copyright © NJ Luxury Car Rentals 2023. All rights reserved.</p>

@@ -1,0 +1,37 @@
+.cars-list-container {
+    padding: 20px;
+}
+
+.car {
+    display: flex;
+}
+
+.car-photo {
+    flex: 0.3;
+}
+
+.car-info {
+    flex: 0.7;
+}
+
+.car-photo img {
+    width: 350px;
+    height: 250px;
+    padding: 5px;
+}
+
+.book-car-btn {
+    background-color: #ececec;
+    color: #000080;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.book-car-btn:hover {
+    background-color: #000080;
+    color: #ececec;
+}

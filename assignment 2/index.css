@@ -214,7 +214,7 @@ input[type="submit"] {
 
 footer {
     display: block;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -224,7 +224,12 @@ footer {
     text-align: center;
 }
 
-.mailto, .tel {
+.mailto {
+    color: #e4e4e4;
+    float: left;
+} 
+
+.tel {
     color: #e4e4e4;
 }
 
@@ -264,9 +269,9 @@ footer {
 
     .login, .signup {
         padding: 5px 10px !important;
-        margin: 4px;
-        font-size: 14px;
-        border-radius: 4px;
+        margin: 4px !important;
+        font-size: 14px !important;
+        border-radius: 4px !important;
     }
 
     p {
@@ -287,6 +292,22 @@ footer {
 
     .certifications {
         padding: 15px;
+    }
+
+    input[type="text"] {
+        padding: 6px;
+    }
+
+    input[type="submit"] {
+        padding: 6px 12px;
+    }
+
+    footer {
+        padding: 14px;
+    }
+
+    .linkedin {
+        right: 30px;
     }
 }
 
@@ -335,5 +356,21 @@ footer {
 
     .certifications {
         padding: 10px;
+    }
+
+    input[type="text"] {
+        padding: 4px;
+    }
+
+    input[type="submit"] {
+        padding: 4px 8px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+
+    .linkedin {
+        right: 15px;
     }
 }

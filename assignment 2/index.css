@@ -7,7 +7,7 @@
     }
 
     h3 {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
@@ -17,7 +17,7 @@
         font-size: 12px;
     }
     h3 {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
@@ -211,6 +211,29 @@ summary {
     transition: opacity 0.2s;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #8a8a8a;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #f98959;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
 footer {
     display: block;

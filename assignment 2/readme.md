@@ -3,7 +3,8 @@ Hello!
 For this assignment, I have created a professional portfolio website which showcases my work profile, skills and career achievements.
 
 - The website has only a single page showcasing my complete professional profile, including video of me and audio which shows pronunciation of my name.
-- The website has used overflow property where extra content is seen using "scroll". 
+- The website has used overflow property where extra content is seen using "scroll". Float property is used for header buttons.
+- One section uses a column layout which contains two columns: a video & some info about me and my professional career.
 - Appropriate positioning (absolute, relative) is done where needed.
 - All required tags mentioned below are used:
 

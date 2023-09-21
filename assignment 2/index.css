@@ -156,6 +156,23 @@ td:nth-child(5):hover {
     /* padding: 20px; */
 }
 
+details {
+    margin: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style the <summary> element */
+summary {
+    font-weight: bold;
+    color: #f98959; /* Orange color */
+    cursor: pointer;
+    outline: none; /* Remove the default browser outline */
+}
+
 .certifications {
     display: flex;
     flex-wrap: wrap;

@@ -33,7 +33,7 @@ h3 {
 }
 
 header {
-    padding: 10px 0;
+    /* padding: 10px 0; */
 
     && .header-container {
         
@@ -49,11 +49,11 @@ header {
 
         && .header-job-role {
             position: absolute;
-            top: 70px;
+            top: 60px;
             left: 20px;
             font-style: italic;
             font-family:'Times New Roman', Times, serif;
-            font-size: 12px;
+            font-size: 13px;
             color: #c3c3c3;
         }
 
@@ -141,17 +141,59 @@ th:first-child {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #ff5353;
 }
 
 td:nth-child(5) {
     font-weight: bold;
     color: #009900;
 }
+td:nth-child(5):hover {
+    color: #d4d11d;
+}
 
 .skills-and-experience {
     /* padding: 20px; */
 }
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect: Enlarge and add shadow on hover */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: 150px;
+    display: block;
+}
+
+.gallery-item figcaption {
+    text-align: center;
+    padding: 10px;
+    background-color: #f98959;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
 
 footer {
     display: block;

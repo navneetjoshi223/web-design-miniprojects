@@ -1,0 +1,44 @@
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.fullNameAndNuid {
+	text-align: center;
+}
+
+.socialmediaicons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socialmediaicons ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.socialmediaicons ul li img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.socialmediaicons{
+	text-align: center;
+}
+
+.btnDefault {
+	background-color: #787878;
+	color: #fff;
+	border-radius: 3px;
+	border:2px solid #787878;
+	margin-left: 180px;
+	cursor: not-allowed;
+}
+
+.btnClickable {
+  color:#fff;
+	background-color: orange;
+	border-radius: 3px;
+	border:2px solid orange;
+	margin-left: 180px;
+}

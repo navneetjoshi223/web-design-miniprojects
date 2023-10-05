@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="mystyles.css" />
+    <style>
+      label {
+        float: left;
+        width: 150px;
+      }
+      #container {
+        width: 700px;
+        margin: auto;
+        background-color: beige;
+      }
+      main {
+        padding: 50px;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h2>Feeback</h2>
+        <h3>Love something? Hate something? Let us know!</h3>
+        Note : Fields marked with an asterisk(*) are mandatory
+        <br /><br />
+        <form method="post" novalidate>
+          <label>Title*:</label>
+          <input
+            type="radio"
+            name="title"
+            id="miss"
+            value="miss"
+            required="required"
+            onchange="validateRadioSelection()"
+          />Miss
+          <input
+            type="radio"
+            name="title"
+            id="mr"
+            value="mr"
+            required="required"
+            onchange="validateRadioSelection()"
+          />Mr.
+          <input
+            type="radio"
+            name="title"
+            id="mrs"
+            value="mrs"
+            required="required"
+            onchange="validateRadioSelection()"
+          />Mrs. <br /><br />
+          <div id="error_title" class="hidden">
+            Please select atleast one title.
+          </div>
+          <br /><br />
+          <label for="firstName">First Name*:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            minlength="1"
+            maxlength="30"
+            onkeyup="validateAlphanumericField(event)"
+            required
+          />
+          <br /><br />
+          <div id="error_fn" class="hidden">Please enter valid first name.</div>
+
+          <label for="lastName">Last Name*:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            minlength="1"
+            maxlength="30"
+            onkeyup="validateAlphanumericField(event)"
+            required
+          />
+          <br /><br />
+          <div id="error_ln" class="hidden">Please enter valid last name.</div>
+
+          <label for="emailId">Email Id*:</label>
+          <input
+            type="text"
+            name="emailId"
+            id="emailId"
+            placeholder="yourname@northeastern.edu"
+            minlength="1"
+            maxlength="30"
+            onkeyup="validateEmail()"
+            required
+          />
+          <br /><br />
+          <div id="error_email" class="hidden">
+            Please enter valid email id.
+          </div>
+
+          <label for="phoneNumber">Phone Number*:</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="xxx-xxx-xxxx"
+            minlength="1"
+            maxlength="15"
+            onkeyup="validatePhoneNumber()"
+            required
+          />
+          <br /><br />
+          <div id="error_phone_number" class="hidden">
+            Please enter valid phone number.
+          </div>
+          <br /><br />
+
+          <label for="streetAddress1">Street Address 1*:</label>
+          <input
+            type="text"
+            name="streetAddress1"
+            id="streetAddress1"
+            placeholder="Street Address 1"
+            minlength="5"
+            maxlength="50"
+            onkeyup="validateAlphanumericField(event)"
+            required
+          />
+          <br /><br />
+          <div id="error_street_address" class="hidden">
+            Please enter valid street address.
+          </div>
+
+          <label for="streetAddress2">Street Address 2:</label>
+          <input
+            type="text"
+            name="streetAddress2"
+            id="streetAddress2"
+            placeholder="Street Address 2"
+            minlength="5"
+            maxlength="50"
+          />
+          <br /><br />
+
+          <label for="city">City*:</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="City"
+            minlength="1"
+            maxlength="30"
+            onkeyup="validateAlphanumericField(event)"
+            required
+          />
+          <br /><br />
+          <div id="error_city" class="hidden">
+            Please enter valid city name.
+          </div>
+
+          <label for="state">State*:</label>
+          <input
+            type="text"
+            name="state"
+            id="state"
+            placeholder="State"
+            minlength="1"
+            maxlength="30"
+            onkeyup="validateAlphanumericField(event)"
+            required
+          />
+          <br /><br />
+          <div id="error_state" class="hidden">
+            Please enter valid state name.
+          </div>
+
+          <label for="zipcode">ZipCode*:</label>
+          <input
+            type="text"
+            name="zipcode"
+            id="zipcode"
+            placeholder="xxxxxx"
+            minlength="3"
+            maxlength="6"
+            onkeyup="validateZipCode()"
+            required
+          />
+          <br /><br />
+          <div id="error_zipcode" class="hidden">
+            Please enter valid zipcode.
+          </div>
+
+          <label for="zipcode">How did you hear*:</label>
+          <input
+            id="sourceofinfo"
+            type="checkbox"
+            name="source"
+            value="facebook"
+            onchange="validateCheckboxes()"
+          />
+          Facebook
+          <input
+            id="sourceofinfo"
+            type="checkbox"
+            name="source"
+            value="google"
+            onchange="validateCheckboxes()"
+          />
+          Google
+          <input
+            id="sourceofinfo"
+            type="checkbox"
+            name="source"
+            value="yelp"
+            onchange="validateCheckboxes()"
+          />
+          Yelp <br /><br />
+          <div id="error_name" class="hidden">
+            Please check atleast one checkbox.
+          </div>
+
+          <label for="comments">Comments*:</label>
+          <textarea
+            name="text"
+            id="comments"
+            placeholder="Your comments"
+            rows="5"
+            cols="25"
+            minlength="10"
+            maxlength="100"
+            required
+          ></textarea>
+          <br /><br />
+          <div id="error_name" class="hidden">Please enter comments.</div>
+
+          <label for="">Select value from dropdown:</label>
+          <select id="mySelect" onchange="changeDropdownSelection()">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+            <option value="option5">Option 5</option>
+          </select>
+
+          <label for="dynamicCheckbox" id="checkboxLabel">Checkbox Text</label>
+          <input type="checkbox" id="dynamicCheckbox" />
+
+          <input
+            type="Submit"
+            id="submitBtn"
+            onclick="saveUserInfo()"
+            disabled
+          />
+          <input type="Reset" />
+          <br /><br />
+        </form>
+
+        <script>
+          // Attach the toggleSubmitButton function to each form field's oninput event
+          var formFields = document.querySelectorAll(
+            'input[type="text"], input[type="radio"], select, textarea'
+          );
+
+          formFields.forEach(function (field) {
+            field.addEventListener("input", toggleSubmitButton);
+          });
+        </script>
+      </main>
+    </div>
+	<h2>Results</h2>
+        <table id="resultsTable" class="tblResults tblHidden">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email Id</th>
+              <th>Phone Number</th>
+              <th>Street Address 1</th>
+              <th>Street Address 2</th>
+              <th>City</th>
+              <th>State</th>
+              <th>ZipCode</th>
+              <th>Comments</th>
+              <th>Dropdown Selection</th>
+              <th>Dynamic Checkbox</th>
+            </tr>
+          </thead>
+          <tbody>
+
+		  </tbody>
+        </table>
+  </body>
+</html>

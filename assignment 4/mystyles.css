@@ -1,0 +1,20 @@
+.invalid {
+    border: 2px solid red;
+}
+
+#error_email, #error_phone_number, #error_zipcode, #error_fn, #error_ln, #error_city, #error_state, #error_street_address {
+    color: red;
+    padding-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.tblResults {
+    border: 1px solid gray;
+}
+
+.tblHidden {
+    display: none;
+}

@@ -1,5 +1,30 @@
+@import './../common/mixins';
+
+$white: #fff;
+
+/* Mixins */
+.brandName {
+    @include important-text;
+}
+
+/* Functions */
+@function calculate-border-width($base-width, $multiplier) {
+    @return $base-width * $multiplier;
+}
+
+// Define variables
+$base-border-width: 2px;
+$border-multiplier: 1.5;
+
+// Use the custom function
+.function-use {
+    border: calculate-border-width($base-border-width, $border-multiplier) solid #0074D9;
+    padding: 5px;
+}
+
 .homepage-container {
     padding: 20px;
+    background-color: var(--primary-color); /* Custom Properties */
 }
 
 .video {
@@ -16,12 +41,11 @@
 }
 
 .flex-item {
-    //background-color: #27ae60;
+
     padding: 20px;
     text-align: center;
-    //color: white;
-
-    & img {
+    /* Nesting */
+    img {
         height: auto;
         width: 150px;
     }
@@ -44,40 +68,38 @@
     padding: 20px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-}
+    // Nesting
+    h2 {
+        font-size: 20px;
+        color: #5c5c5c;
+        margin: 10px 0;
+    }
 
-.testimonial img {
-    width: 150px;
-}
+    img {
+        width: 150px;
+    }
 
-/* Testimonial Name */
-.testimonial h2 {
-    font-size: 20px;
-    color: #333;
-    margin: 10px 0;
-}
-
-/* Testimonial Feedback */
-.testimonial p {
-    font-size: 16px;
-    color: #666;
-    margin: 10px 0;
+    p {
+        font-size: 16px;
+        color: #666;
+        margin: 10px 0;
+    }
 }
 
 /* Hover Effect for Testimonial Cards */
 .testimonial:hover {
     transform: scale(1.03); /* Enlarge the card on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
-    background-color: #7cbedf; /* Change the background color on hover */
-    color: #fff; /* Change text color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #7cbedf;
+    color: $white;
 }
 
 /* Adjust hover effect for the Testimonial Name */
 .testimonial h2:hover {
-    color: #fff; /* Change text color on hover */
+    color: $white;
 }
 
 /* Adjust hover effect for the Testimonial Feedback */
 .testimonial p:hover {
-    color: #fff; /* Change text color on hover */
+    color: $white;
 }

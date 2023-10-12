@@ -1,5 +1,19 @@
+/* Mixins */
+.brandName {
+  color: red;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+/* Functions */
+.function-use {
+  border: 3px solid #0074D9;
+  padding: 5px;
+}
+
 .homepage-container {
   padding: 20px;
+  background-color: var(--primary-color); /* Custom Properties */
 }
 
 .video {
@@ -18,6 +32,7 @@
 .flex-item {
   padding: 20px;
   text-align: center;
+  /* Nesting */
 }
 .flex-item img {
   height: auto;
@@ -42,19 +57,14 @@
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
-
+.testimonial h2 {
+  font-size: 20px;
+  color: #5c5c5c;
+  margin: 10px 0;
+}
 .testimonial img {
   width: 150px;
 }
-
-/* Testimonial Name */
-.testimonial h2 {
-  font-size: 20px;
-  color: #333;
-  margin: 10px 0;
-}
-
-/* Testimonial Feedback */
 .testimonial p {
   font-size: 16px;
   color: #666;
@@ -64,17 +74,17 @@
 /* Hover Effect for Testimonial Cards */
 .testimonial:hover {
   transform: scale(1.03); /* Enlarge the card on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
-  background-color: #7cbedf; /* Change the background color on hover */
-  color: #fff; /* Change text color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #7cbedf;
+  color: #fff;
 }
 
 /* Adjust hover effect for the Testimonial Name */
 .testimonial h2:hover {
-  color: #fff; /* Change text color on hover */
+  color: #fff;
 }
 
 /* Adjust hover effect for the Testimonial Feedback */
 .testimonial p:hover {
-  color: #fff; /* Change text color on hover */
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

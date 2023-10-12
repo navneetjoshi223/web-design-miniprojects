@@ -1,3 +1,9 @@
+/* Variables */
+/* Interpolation */
+.yellow-text {
+  color: yellow;
+}
+
 .cars-list-container {
   padding: 20px;
 }
@@ -9,15 +15,15 @@
 .car-photo {
   flex: 0.4;
   padding: 0 30px 10px 0;
+  /* Nesting */
+}
+.car-photo img {
+  width: 100%;
+  height: 250px;
 }
 
 .car-info {
   flex: 0.6;
-}
-
-.car-photo img {
-  width: 100%;
-  height: 250px;
 }
 
 .book-car-btn {
@@ -140,4 +146,32 @@
   color: #fff;
   margin: 0;
   padding: 20px;
+}
+
+/* Placeholder Selector */
+.premium-booking-btn {
+  background-color: #cbc93a;
+  color: #15c79d;
+  border: 1px solid #1271bf;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.premium-booking-btn {
+  border-radius: 5px;
+}
+
+/* Additional SASS/SCSS features */
+.hypercar-senna {
+  width: 33%;
+  height: 25%;
+}
+.hypercar-senna:hover {
+  background-color: #0056B3;
+}
+
+.hypercar-enzo {
+  font-family: Helvetica, Arial, sans-serif;
 }/*# sourceMappingURL=cars-list.css.map */

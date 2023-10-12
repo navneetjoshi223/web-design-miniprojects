@@ -116,6 +116,7 @@ header img {
 .flex-item {
   padding: 20px;
   text-align: center;
+  /* Nesting */
 }
 .flex-item img {
   height: auto;
@@ -139,7 +140,6 @@ header img {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-  /* Nesting */
 }
 .testimonial h2 {
   font-size: 20px;
@@ -158,19 +158,19 @@ header img {
 /* Hover Effect for Testimonial Cards */
 .testimonial:hover {
   transform: scale(1.03); /* Enlarge the card on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
-  background-color: #7cbedf; /* Change the background color on hover */
-  color: #fff; /* Change text color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #7cbedf;
+  color: #fff;
 }
 
 /* Adjust hover effect for the Testimonial Name */
 .testimonial h2:hover {
-  color: #fff; /* Change text color on hover */
+  color: #fff;
 }
 
 /* Adjust hover effect for the Testimonial Feedback */
 .testimonial p:hover {
-  color: #fff; /* Change text color on hover */
+  color: #fff;
 }
 
 /* Variables */

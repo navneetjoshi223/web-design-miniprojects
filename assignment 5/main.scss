@@ -1,0 +1,20 @@
+// Import pages' scss
+@import 'scss/layouts/grid-layout.scss';
+@import 'scss/layouts/flex-layout.scss';
+
+// Import common variables and mixins
+// @import 'scss/common/variables';
+// @import 'scss/common/mixins';
+
+@import 'scss/common/header.scss';
+@import 'scss/common/footer.scss';
+
+/* SCSS for web pages */
+@import 'scss/pages/index.scss';
+@import 'scss/pages/cars-list.scss';
+
+body {
+    margin: 0;
+}
+
+

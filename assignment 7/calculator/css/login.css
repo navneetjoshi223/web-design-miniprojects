@@ -1,0 +1,35 @@
+body {
+    background-image: url("../images/calculator-background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin: 1.25rem 0;
+}
+
+#email::placeholder {
+    color: #bbbbbb;
+}
+
+/* #username::placeholder {
+    color: #bbbbbb;
+} */
+
+.btn.disabled {
+    cursor: not-allowed;
+}
+
+.login-form {
+    border: 1px solid #e0e0e0;
+    box-shadow: 10px 10px 5px #ededed;
+    border-radius: 10px;
+}
+
+.loginbutton {
+    margin: 1rem 0; 
+}

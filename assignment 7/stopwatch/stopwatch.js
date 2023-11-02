@@ -28,6 +28,9 @@ async function startTimer() {
   if (!running) {
     if (elapsedTime === 0) {
         startTime = new Date().getTime();
+    } else {
+        const currentTime = new Date().getTime();
+        startTime = currentTime - elapsedTime;
     }
     running = true;
     startButton.disabled = true;
@@ -58,10 +61,11 @@ function resetTimer() {
 async function updateTimerWithAsync() {
   while (running) {
     const currentTime = new Date().getTime();
-    const elapsed =  currentTime - startTime;
-    const hours = String(Math.floor(elapsed / 3600000)).padStart(2, '0');
-    const minutes = String(Math.floor((elapsed % 3600000) / 60000)).padStart(2, '0');
-    const seconds = String(Math.floor((elapsed % 60000) / 1000)).padStart(2, '0');
+    //const elapsed = currentTime - startTime;
+    elapsedTime = currentTime - startTime;
+    const hours = String(Math.floor(elapsedTime / 3600000)).padStart(2, '0');
+    const minutes = String(Math.floor((elapsedTime % 3600000) / 60000)).padStart(2, '0');
+    const seconds = String(Math.floor((elapsedTime % 60000) / 1000)).padStart(2, '0');
     timerElement.innerText = `${hours}:${minutes}:${seconds}`;
     await new Promise((resolve) => setTimeout(resolve, 1000)); // Wait for 1 second
   }

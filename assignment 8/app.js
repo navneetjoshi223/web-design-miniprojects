@@ -1,4 +1,3 @@
-// app.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
@@ -81,8 +80,6 @@ app.put('/user/edit', async (req, res) => {
 app.delete('/user/delete', async (req, res) => {
   try {
     const { email } = req.body;
-
-    // Delete user
     const user = await User.findOneAndDelete({ email });
 
     if (!user) {

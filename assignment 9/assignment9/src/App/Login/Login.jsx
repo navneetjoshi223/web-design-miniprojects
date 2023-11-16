@@ -30,7 +30,7 @@ const Login = () => {
         };
 
         const response = await fetch('http://localhost:3000/api/user/findUserForLogin', apiOptions);
-        const data =  await response.json();
+        //const data =  await response.json();
         
         if(response.status === 200) {
           navigate('/home');

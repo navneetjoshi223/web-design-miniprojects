@@ -1,11 +1,14 @@
 // /src/components/Contact/Contact.js
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import Card from '../Card/Card';
 
 const Contact = () => {
   return (
     <div>
+      <Navbar/>
       <h2>Contact</h2>
-      <p>This is the contact page content.</p>
+      <Card color="#ab32a8" text="Contact details" />
     </div>
   );
 };

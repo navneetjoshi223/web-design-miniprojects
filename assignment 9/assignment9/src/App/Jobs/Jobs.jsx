@@ -1,11 +1,14 @@
 // /src/components/Jobs/Jobs.js
 import React from 'react';
+import Card from '../Card/Card';
+import Navbar from '../Navbar/Navbar';
 
 const Jobs = () => {
   return (
     <div>
+      <Navbar/>
       <h2>Jobs</h2>
-      <p>This is the jobs page content.</p>
+      <Card color="#2f4abf" text="Jobs details" />
     </div>
   );
 };

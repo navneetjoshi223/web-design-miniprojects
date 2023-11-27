@@ -8,4 +8,10 @@ React Router: Routes configured for displaying the 5-day forecast and hourly for
 API Integration: Fetches real-time weather data from the OpenWeatherMap API.
 
 *API Usage*
+
 This application uses the OpenWeatherMap API to fetch weather data. The API key is stored in the .env file for security.
+
+*Credits*
+
+OpenWeatherMap API: https://openweathermap.org/
+Weather icons provided by OpenWeatherMap

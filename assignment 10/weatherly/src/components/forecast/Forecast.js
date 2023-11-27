@@ -15,8 +15,9 @@ const Forecast = () => {
 
         // Process and set the forecast data
         if (response && response.data && response.data.list) {
+            setForecastData(response.data.list);
         }
-        setForecastData(response.data.list);
+        
       } catch (error) {
         console.error("Error fetching data:", error);
       }

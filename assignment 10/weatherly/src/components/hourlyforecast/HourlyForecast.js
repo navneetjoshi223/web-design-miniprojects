@@ -28,7 +28,7 @@ const HourlyForecast = (props) => {
   }, [props.forecastData, day]);
 
   return (
-    <div className="row">
+    <div className="row m-3">
       <h2>Hourly forecast for {day}</h2>
 
       {filteredData &&

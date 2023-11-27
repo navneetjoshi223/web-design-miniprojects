@@ -5,9 +5,9 @@ const Forecast = (props) => {
 
 
   return (
-    <div>
-      <h1>5-Day Weather Forecast</h1>
-      <div className="forecast-container row">
+    <div className="m-3">
+      <h1>5-Day Boston Weather Forecast</h1>
+      <div className="forecast-container row p-2">
         {props.forecastData && props.forecastData.map(
           (forecast, index) =>
             forecast.dt_txt.includes("12:00:00") && (

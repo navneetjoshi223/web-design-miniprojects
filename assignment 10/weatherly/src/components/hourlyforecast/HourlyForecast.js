@@ -35,7 +35,7 @@ const HourlyForecast = (props) => {
         filteredData.map((forecast, index) => (
           <div
             key={index}
-            className="card border-primary m-3 p-3 hourly-weather-card"
+            className="card border-primary m-3 p-3 hourly-weather-card col-3"
             style={{ width: "18rem" }}
           >
             <div className="card-body">

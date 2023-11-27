@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-const HourlyForecast = () => {
+const HourlyForecast = (props) => {
   const { day } = useParams();
+
+  useEffect(() => {
+    console.log(props.forecastData);
+  }, [props.forecastData]);
 
   return (
     <div>

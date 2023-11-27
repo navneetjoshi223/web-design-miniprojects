@@ -19,7 +19,7 @@ const WeatherCard = ({ forecast }) => {
       <div className="card border-primary m-3 weather-card" style={{ width: '18rem' }}>
         <div className="card-body">
           <h5 className="card-title">{dayOfTheWeek}, {forecastDate}</h5>
-          <img src={`https://openweathermap.org/img/wn/${forecast.weather[0].icon}@4x.png`} alt=""></img>
+          <img src={`https://openweathermap.org/img/wn/${forecast.weather[0].icon}@4x.png`} alt="Weather icon"></img>
           <h3 className="card-text"><b>{forecast.main.temp} &deg;C</b></h3>
           <p className="card-text">Min.: {forecast.main.temp_min} &deg;C</p>
           <p className="card-text">Max.: {forecast.main.temp_max} &deg;C</p>
